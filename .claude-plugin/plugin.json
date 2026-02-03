@@ -1,0 +1,23 @@
+{
+  "name": "academic-diagrams",
+  "version": "1.0.0",
+  "description": "Generate publication-ready academic illustrations from methodology descriptions. Implements the PaperBanana 5-agent pipeline with 3-round iterative refinement. Outputs SVG, Chart.js, Mermaid, or ASCII.",
+  "author": "FrancyJGLisboa",
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/academic-diagrams",
+  "skills": [
+    "academic-diagram"
+  ],
+  "keywords": [
+    "academic",
+    "diagrams",
+    "illustrations",
+    "svg",
+    "neurips",
+    "publication",
+    "paperbanana"
+  ],
+  "compatibility": {
+    "claude-code": ">=2.0.0"
+  }
+}
