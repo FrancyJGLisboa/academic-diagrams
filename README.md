@@ -4,8 +4,6 @@
 
 Inspired by [PaperBanana](https://dwzhu-pku.github.io/PaperBanana/) (Zhu et al., 2026) — an agentic framework that automates NeurIPS-quality diagram generation.
 
-![Example Output](examples/human_cell_preview.png)
-
 ## Features
 
 - **5-Agent Pipeline**: Retriever → Planner → Stylist → Visualizer → Critic
@@ -14,22 +12,51 @@ Inspired by [PaperBanana](https://dwzhu-pku.github.io/PaperBanana/) (Zhu et al.,
 - **NeurIPS Aesthetic**: Soft pastels, clean typography, professional layout
 - **Full Academic Suite**: Methodology diagrams, statistical plots, tables, pseudocode
 
+---
+
 ## Installation
 
-### Quick Install (Recommended)
+### One-Liner (Recommended)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/FrancyJGLisboa/academic-diagrams/main/install.sh | bash
+```
+
+### Using OpenSkills
+
+```bash
+npx openskills install FrancyJGLisboa/academic-diagrams
+```
+
+### Manual Installation
 
 ```bash
 git clone https://github.com/FrancyJGLisboa/academic-diagrams.git
 cp -r academic-diagrams/skills/academic-diagram ~/.claude/skills/
 ```
 
-### Verify Installation
+### Uninstall
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/FrancyJGLisboa/academic-diagrams/main/uninstall.sh | bash
+```
+
+Or manually:
+```bash
+rm -rf ~/.claude/skills/academic-diagram
+```
+
+---
+
+## Verify Installation
 
 Restart Claude Code, then invoke:
 
 ```
 /academic-diagram
 ```
+
+---
 
 ## Quick Start
 
@@ -48,6 +75,8 @@ Type: Framework diagram
 Format: SVG
 ```
 
+---
+
 ## Supported Diagram Types
 
 | Type | Format | Best For |
@@ -57,6 +86,8 @@ Format: SVG
 | **Tables** | HTML/Markdown | Results, comparisons, ablations |
 | **Pseudocode** | ASCII/Unicode | Algorithms, mathematical notation |
 | **Flowcharts** | Mermaid | Simple pipelines (GitHub-native) |
+
+---
 
 ## The 5-Agent Pipeline
 
@@ -81,6 +112,8 @@ Format: SVG
 └─────────────────────────────────────────────────────────────┘
 ```
 
+---
+
 ## NeurIPS 2025 Style Guide
 
 The skill applies the **"Soft Tech & Scientific Pastels"** aesthetic:
@@ -94,16 +127,22 @@ The skill applies the **"Soft Tech & Scientific Pastels"** aesthetic:
 | **Shapes** | Rounded rectangles (8-12px radius) |
 | **Typography** | Sans-serif for labels, Serif italic for math |
 
+---
+
 ## Examples
 
 See the [examples/](examples/) folder for sample outputs:
 
-- `human_cell.html` — Biological cell diagram with organelles
+- `human_cell.html` — Biological cell diagram with labeled organelles
+
+---
 
 ## Requirements
 
 - [Claude Code](https://claude.ai/code) with an active subscription
 - Claude Code 2.0+ with Skills support
+
+---
 
 ## Credits
 
@@ -117,9 +156,13 @@ Peking University & Google Cloud AI Research
 Key insight from the paper:
 > "Randomly selected examples work nearly as well as semantically matched ones. What matters is showing the model what good diagrams look like."
 
+---
+
 ## License
 
 MIT License — see [LICENSE](LICENSE)
+
+---
 
 ## Contributing
 
