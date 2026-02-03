@@ -1,6 +1,6 @@
 ---
-name: "Academic Diagram Generator"
-description: "Generate publication-ready academic illustrations from methodology descriptions. Implements the PaperBanana 5-agent pipeline (Retriever→Planner→Stylist→Visualizer→Critic) with 3-round iterative refinement. Use when creating methodology diagrams, framework overviews, statistical plots, or any academic figure. Outputs SVG, Chart.js, or ASCII. Invoked via /academic-diagram."
+name: "academic-diagram"
+description: "Generate publication-ready academic illustrations from methodology descriptions. Implements the PaperBanana 5-agent pipeline (Retriever→Planner→Stylist→Visualizer→Critic) with 3-round iterative refinement. Use when creating methodology diagrams, framework overviews, statistical plots, or any academic figure. Outputs SVG, Chart.js, or ASCII."
 ---
 
 # Academic Diagram Generator
